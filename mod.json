@@ -1,0 +1,38 @@
+{
+	"geode": "4.2.0",
+	"gd": {
+		"win": "2.2074",
+		"android": "2.2074",
+		"mac": "2.2074",
+		"ios": "2.2074"
+	},
+	"id": "bitz.hard_mode",
+	"name": "Hard Mode",
+	"version": "v1.0.0",
+	"developer": "BitZ",
+	"description": "Geometry Dash but its hard mode",
+	"early-load": true,
+	"resources": {
+		"sprites": [
+			"resources/*.png"
+		],
+		"spritesheets": {
+			"IconSheet": [
+				"resources/newRates/*.png"
+			]
+
+		},
+		"files": [
+			"resources/hardmodeLevels/*.txt",
+			"resources/hardmodeLevels/*.zip"
+		]
+	},
+	"settings": {
+		"unlock-all": {
+			"name": "Unlock all",
+			"description": "Unlock all achievements to use!",
+			"type": "bool",
+			"default": true
+		}
+	}
+}
