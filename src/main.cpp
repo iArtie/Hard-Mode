@@ -156,6 +156,33 @@ class $modify(MenuLayer) {
 //  //
 //};
 
+#include <Geode/modify/LevelPage.hpp>
+
+class $modify(LevelPage)
+{
+    
+    void onInfo(cocos2d::CCObject * sender)
+    {
+        if (this->m_level->m_levelID == -1)
+        {
+			auto secret = FLAlertLayer::create(nullptr,
+				"???",
+				"<cj>El maravilloso mundo que solias conocer</c>\n"
+				"<cr>esta desapareciendo..</c>\n"
+                "<cg>Bienvenido</c> al <cy>HARDMODE</c>",
+				"OK",
+                nullptr,
+                360);
+
+            secret->show();
+        }
+        else
+        {
+            LevelPage::onInfo(sender);
+        }
+    }
+};
+
 #include <Geode/modify/PlayLayer.hpp>
 class $modify(PlayLayer)
 {
@@ -247,7 +274,7 @@ class $modify(OptionsLayer) {
         auto array = CCArray::create();
 
 
-        array->addObject(DialogObject::create("RobTop", "<cp>Acaso crees</c> que vas a <co>tener tu cuenta</c> aqui? <d60> <s200> <cr>Bruh... </c> </s>", 28, 1, false, { 255, 255, 255 }));
+        array->addObject(DialogObject::create("Darkness", "<cp>No puedes</c> acceder a <co>tu cuenta</c>... <d60> <s200> <cr>NO</c></s><s200> <cr>TE</c></s><s200><cr> LO</c></s><s200> <cr>DEJARE</c></s><s200> <cr>TAN</c></s><s200> <cr>FACIL.</c></s>", 15, 1, false, { 255, 255, 255 }));
 
     
         auto accDialog = DialogLayer::createDialogLayer(nullptr, array, 2);

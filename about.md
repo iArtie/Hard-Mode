@@ -1,4 +1,4 @@
-# <cr>Geometry Dash: Hardmode</c>
+# <cr>Geometry Dash: HARDMODE</c>
 
 Pensabas que conocias el juego?  
 <cp>Te equivocaste.</c>
@@ -16,5 +16,5 @@ Queres detenerlo?
 <cg>Mas oscuros.</c>  
 <cp>Mas despiadados.</c>
 
-Este ya no es el Geometry Dash que recordas...  
-<cl>Es hora de demostrar si sos digno del <cr>Hardmode</c>.</cl>
+Este ya no es el Geometry Dash que quieres...  
+<cl>Es hora de demostrar si eres digno del <cr>HARDMODE</c>.</cl>
