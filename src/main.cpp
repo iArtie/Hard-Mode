@@ -169,7 +169,7 @@ class $modify(LevelPage)
 				"???",
 				"<cj>El maravilloso mundo que solias conocer</c>\n"
 				"<cr>esta desapareciendo..</c>\n"
-                "<cg>Bienvenido</c> al <cy>HARDMODE</c>",
+                "<cg>Bienvenido</c> al <cy>HARD MODE</c>",
 				"OK",
                 nullptr,
                 360);
