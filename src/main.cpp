@@ -179,10 +179,10 @@ class $modify(PlayLayer)
      
     }
 
-    virtual void currencyWillExit(CurrencyRewardLayer* a1)
+   /* virtual void currencyWillExit(CurrencyRewardLayer* a1)
     {
 
-    }
+    }*/
   //  void levelComplete()
   //  {
 
