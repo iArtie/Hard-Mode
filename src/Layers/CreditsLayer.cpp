@@ -1,5 +1,6 @@
 
 #include "CreditsLayer.h"
+#include "../main.cpp"
 using namespace geode::prelude;
 
     bool CreditsLayer::setup() {
@@ -30,29 +31,33 @@ using namespace geode::prelude;
 		auto director = CCDirector::sharedDirector();
 		auto usersLayer = CCLayer::create();
 
-		
-        /*commentList->setPosition(m_mainLayer->getContentWidth() / 2, 20.f);*/
-
-        //Organizador
+        //Organized
 		auto layer1 = CCLayer::create();
 
         createProfilePlaceholder(layer1, "GersonGaming", 12, 41, 41, 107, 12018835, { layer1->getContentWidth() / 2,40 });
 		
-        auto customTitleLayer1 = CCLabelBMFont::create("Organizado por", "bigFont.fnt");
+        auto customTitleLayer1 = CCLabelBMFont::create(
+            tr("Organizado por", "Organized by").c_str(),
+            "bigFont.fnt"
+        );
 		customTitleLayer1->setScale(0.8f);
 		customTitleLayer1->setPosition({120,40});
 
 		layer1->addChild(customTitleLayer1);
         
 
-        //Creadores de niveles
+        //Levels creation
         auto layer2 = CCLayer::create();
    
 
         createProfilePlaceholder(layer2, "LennyCreator", 18, 3, 16, 62, 2114616, { (layer2->getContentWidth() / 2)-130,40 });
         createProfilePlaceholder(layer2, "GersonGaming", 12, 41, 41, 107, 12018835, { (layer2->getContentWidth() / 2) - 228,40 });
 
-        auto customTitleLayer2 = CCLabelBMFont::create("Creacion de\n niveles", "bigFont.fnt");
+        auto customTitleLayer2 = CCLabelBMFont::create(
+            tr("Creacion de\nniveles", "Level\nCreation").c_str(),
+            "bigFont.fnt"
+        );
+
         customTitleLayer2->setScale(0.6f);
         customTitleLayer2->setPosition({ 270,40 });
 
@@ -74,11 +79,14 @@ using namespace geode::prelude;
 
 
 
-        //Artista
+        //Artistic
 		auto layer4 = CCLayer::create();
      
         
-        auto customTitleLayer4 = CCLabelBMFont::create("Apartado Artistico", "bigFont.fnt");
+        auto customTitleLayer4 = CCLabelBMFont::create(
+            tr("Apartado Artistico", "Artistic Section").c_str(),
+            "bigFont.fnt"
+        );
         customTitleLayer4->setScale(0.65f);
         customTitleLayer4->setPosition({ 215,40 });
 
@@ -90,11 +98,14 @@ using namespace geode::prelude;
 
 
 
-		//Musica
+		//Music
         auto layer5 = CCLayer::create();
  
 
-        auto customTitleLayer5 = CCLabelBMFont::create("Apartado Musical", "bigFont.fnt");
+        auto customTitleLayer5 = CCLabelBMFont::create(
+            tr("Apartado Musical", "Music Section").c_str(),
+            "bigFont.fnt"
+        );
         customTitleLayer5->setScale(0.7f);
         customTitleLayer5->setPosition({ 120,40 });
 
@@ -110,7 +121,7 @@ using namespace geode::prelude;
         auto customTitleLayer6 = CCLabelBMFont::create("Playtesters", "bigFont.fnt");
         customTitleLayer6->setScale(0.55f);
         customTitleLayer6->setPosition({ 170,73 });
-       /* customTitleLayer6->setOpacity(50);*/
+  
         layer6->addChild(customTitleLayer6,-1);
 
         createProfilePlaceholder(layer6, "krystalite", 40, 12, 12, 99, 6575080, { (layer6->getContentWidth() / 2) +10,25 });
@@ -118,7 +129,7 @@ using namespace geode::prelude;
         createProfilePlaceholder(layer6, "Rodaxis", 6, 3, -1, 35, 16469733, { (layer6->getContentWidth() / 2) - 160,25 });
         createProfilePlaceholder(layer6, "GerpowerGD", 1, 3, -1, 74, 10857191, { (layer6->getContentWidth() / 2) - 235,25 });
 
-        /*createProfilePlaceholder(layer6, "krystalite", 40, 12, 12, 99, 6575080, { layer6->getContentWidth() / 2,20 });*/
+     
         auto layer7 = CCLayer::create();
       
 
@@ -134,15 +145,6 @@ using namespace geode::prelude;
         layersArray->addObject(layer5);
         layersArray->addObject(layer6);
         layersArray->addObject(layer7);
-
-
-        /*layersArray->addObject(layer1);
-
-        layersArray->addObject(layer1);
-
-        layersArray->addObject(layer1);*/
-
-
 
 		m_mainLayer->addChild(usersLayer);
         usersLayer->setPosition(m_mainLayer->convertToNodeSpace(ccp(0, 0)));
@@ -205,7 +207,6 @@ using namespace geode::prelude;
         {
             icon->setGlowOutline(gm->colorForIdx(colorGlow));
 			icon->enableCustomGlowColor(gm->colorForIdx(colorGlow));
-			/*icon->setVisible(false);*/
         }
         
         icon->setPosition({ position.x,position.y });

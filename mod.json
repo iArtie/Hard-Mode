@@ -1,5 +1,5 @@
 {
-	"geode": "4.5.0",
+	"geode": "4.9.0",
 	"gd": {
 		"win": "2.2074",
 		"android": "2.2074",
@@ -16,23 +16,48 @@
 		"sprites": [
 			"resources/*.png"
 		],
-		"spritesheets": {
-			"IconSheet": [
-				"resources/newRates/*.png"
-			]
-
-		},
 		"files": [
 			"resources/hardmodeLevels/*.txt",
 			"resources/*.zip"
 		]
 	},
+	"tags": [
+		"content",
+		"gameplay"
+	],
+	"incompatibilities": [
+		{
+			"id": "capeling.geometry-dash-lunar",
+			"version": "<=1.0.0",
+			"importance": "conflicting"
+		},
+		{
+			"id": "teamtcm.geometry-dash-odyssey",
+			"version": "<=1.0.0",
+			"importance": "conflicting"
+		},
+		{
+			"id": "chumiu.geometry_dash_time_reborn",
+			"version": "<=1.0.0",
+			"importance": "conflicting"
+		}
+	],
 	"settings": {
 		"unlock-all": {
 			"name": "Unlock all",
 			"description": "Unlock all achievements to use!",
 			"type": "bool",
 			"default": true
+		},
+		"language": {
+			"name": "Language",
+			"description": "You can change the language for darkness lore",
+			"type": "string",
+			"default": "English",
+			"one-of": [
+				"English",
+				"Spanish"
+			]
 		}
 	}
 }
