@@ -5,7 +5,7 @@ using namespace geode::prelude;
 
     bool CreditsLayer::setup() {
   
-        this->setTitle("Thanks for Playing!");
+        this->setTitle(tr("Gracias por jugar!", "Thanks for playing!").c_str());
     
         float offset = 0.0f;
         std::vector<std::tuple<std::string, CCPoint, CCPoint, bool, bool>> corners = {

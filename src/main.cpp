@@ -25,13 +25,3 @@ class $modify(MyGManager, GManager)
         GManager::setup();
 	}
 };
-
-
-#include <Geode/modify/EndLevelLayer.hpp>
-class $modify(EndLevelLayer)
-{
-    void playCurrencyEffect(float p0) {
-     //Removes currency effect
-    }
-
-};

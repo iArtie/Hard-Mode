@@ -36,7 +36,10 @@ class $modify(LoadingLayer)
         auto GM = GameManager::sharedState();
 
         queueInMainThread([=]() {
+            auto logo = typeinfo_cast<CCSprite*>(this->getChildByID("gd-logo"));
+			logo->setPositionY(logo->getPositionY() + 30);
             auto bg = typeinfo_cast<CCSprite*>(this->getChildByID("bg-texture"));
+
             bg->setColor({ 197,0,0 });
             });
         if (!GM->getUGV("30")) {

@@ -8,6 +8,7 @@ class $modify(LevelTools)
     {
         return true;
     }
+
     static GJGameLevel* getLevel(int levelID, bool loaded) {
 
         auto level = LevelTools::getLevel(levelID, loaded);
