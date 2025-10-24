@@ -34,7 +34,7 @@ using namespace geode::prelude;
         //Organized
 		auto layer1 = CCLayer::create();
 
-        createProfilePlaceholder(layer1, "GersonGaming", 12, 41, 41, 107, 12018835, { layer1->getContentWidth() / 2,40 });
+        createProfilePlaceholder(layer1, "GersonGaming", 12, 41, 41, 107, 12018835, { 280,40 });
 		
         auto customTitleLayer1 = CCLabelBMFont::create(
             tr("Organizado por", "Organized by").c_str(),
@@ -50,8 +50,8 @@ using namespace geode::prelude;
         auto layer2 = CCLayer::create();
    
 
-        createProfilePlaceholder(layer2, "LennyCreator", 18, 3, 16, 62, 2114616, { (layer2->getContentWidth() / 2)-130,40 });
-        createProfilePlaceholder(layer2, "GersonGaming", 12, 41, 41, 107, 12018835, { (layer2->getContentWidth() / 2) - 228,40 });
+        createProfilePlaceholder(layer2, "LennyCreator", 18, 3, 16, 62, 2114616,{63,40 });
+        createProfilePlaceholder(layer2, "GersonGaming", 12, 41, 41, 107, 12018835, { 161,40 });
 
         auto customTitleLayer2 = CCLabelBMFont::create(
             tr("Creacion de\nniveles", "Level\nCreation").c_str(),
@@ -69,7 +69,7 @@ using namespace geode::prelude;
 		auto layer3 = CCLayer::create();
         layer3->setAnchorPoint({ 300, 200 });
 
-        createProfilePlaceholder(layer3, "BitZGD", 12, 3, 1, 98, 7624979, { layer3->getContentWidth() / 2,40 });
+        createProfilePlaceholder(layer3, "BitZGD", 12, 3, 1, 98, 7624979, { 291,40 });
 
         auto customTitleLayer3 = CCLabelBMFont::create("Mod Developer", "bigFont.fnt");
         customTitleLayer3->setScale(0.8f);
@@ -90,7 +90,7 @@ using namespace geode::prelude;
         customTitleLayer4->setScale(0.65f);
         customTitleLayer4->setPosition({ 215,40 });
 
-        createProfilePlaceholder(layer4, "GhostPower13", 15, 1, 0, 121, 2678947, { (layer4->getContentWidth() / 2) - 228,40 });
+        createProfilePlaceholder(layer4, "GhostPower13", 15, 1, 0, 121, 2678947, { 63,40 });
 
 
         layer4->addChild(customTitleLayer4);
@@ -111,7 +111,7 @@ using namespace geode::prelude;
 
         layer5->addChild(customTitleLayer5);
 
-        createProfilePlaceholder(layer5, "SheccidM", 12, 3, 8, 122, 14384790, { layer5->getContentWidth() / 2,40 });
+        createProfilePlaceholder(layer5, "SheccidM", 12, 3, 8, 122, 14384790, {291,40 });
 
 
         //Playtesters
@@ -124,17 +124,17 @@ using namespace geode::prelude;
   
         layer6->addChild(customTitleLayer6,-1);
 
-        createProfilePlaceholder(layer6, "krystalite", 40, 12, 12, 99, 6575080, { (layer6->getContentWidth() / 2) +10,25 });
-        createProfilePlaceholder(layer6, "LennyCreator", 18, 3, 16, 62, 2114616, { (layer6->getContentWidth() / 2) - 80,25 });
-        createProfilePlaceholder(layer6, "Rodaxis", 6, 3, -1, 35, 16469733, { (layer6->getContentWidth() / 2) - 160,25 });
-        createProfilePlaceholder(layer6, "GerpowerGD", 1, 3, -1, 74, 10857191, { (layer6->getContentWidth() / 2) - 235,25 });
+        createProfilePlaceholder(layer6, "krystalite", 40, 12, 12, 99, 6575080, {301,25 });
+        createProfilePlaceholder(layer6, "LennyCreator", 18, 3, 16, 62, 2114616, {211,25 });
+        createProfilePlaceholder(layer6, "Rodaxis", 6, 3, -1, 35, 16469733, {131,25 });
+        createProfilePlaceholder(layer6, "GerpowerGD", 1, 3, -1, 74, 10857191, {56,25 });
 
      
         auto layer7 = CCLayer::create();
       
 
-        createProfilePlaceholder(layer7, "Morphirot", 4, 12, 3, 269, 245014, { (layer7->getContentWidth() / 2) - 60,40 });
-        createProfilePlaceholder(layer7, "KiiwiStrawberry", 3, 2, -1, 329, 5952184, { (layer7->getContentWidth() / 2) - 180,40 });
+        createProfilePlaceholder(layer7, "Morphirot", 4, 12, 3, 269, 245014, {231,40 });
+        createProfilePlaceholder(layer7, "KiiwiStrawberry", 3, 2, -1, 329, 5952184, {111,40 });
 
 		auto layersArray = CCArray::create();
 
@@ -159,7 +159,7 @@ using namespace geode::prelude;
 
         listView->ignoreAnchorPointForPosition(true);
 		
-        auto commentList = GJCommentListLayer::create(listView, "halo", { 191, 114, 62,255 }, m_mainLayer->getContentSize().width - 95, m_mainLayer->getContentSize().height - 90, false);
+        auto commentList = GJCommentListLayer::create(listView, "halo", { 191, 114, 62,255 }, 339, 170, false);
 
         
         commentList->setPosition(winSize / 2 - commentList->getScaledContentSize() / 2);
