@@ -4,7 +4,7 @@ using namespace geode::prelude;
 
 class $modify(LevelTools)
 {
-    static bool verifyLevelIntegrity(std::string verifyString, int levelID)
+    static bool verifyLevelIntegrity(gd::string verifyString, int levelID)
     {
         return true;
     }

@@ -228,7 +228,7 @@ using namespace geode::prelude;
 
 		ret->m_noElasticity = true;
 		auto director = CCDirector::sharedDirector();
-        if (ret->initAnchored((director->getWinSize().width/2)+150, (director->getWinSize().height / 2)+100, "GJ_square01.png")) {
+        if (ret->initAnchored(434, 260, "GJ_square01.png")) {
             ret->autorelease();
             return ret;
         }
