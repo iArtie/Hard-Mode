@@ -1,3 +1,7 @@
+# 1.0.2
+- Changes and fixes for file paths
+- Fix returns to improve compatibility with different systems
+
 # 1.0.1
 - Orbs doens't show in EndLevelLayer fix
 - Some spanish dialogs fix

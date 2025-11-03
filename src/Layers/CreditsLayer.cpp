@@ -1,11 +1,11 @@
 
 #include "CreditsLayer.h"
-#include "../main.cpp"
+#include "../utils/Traslate.hpp"
 using namespace geode::prelude;
 
     bool CreditsLayer::setup() {
   
-        this->setTitle(tr("Gracias por jugar!", "Thanks for playing!").c_str());
+        this->setTitle(Traslate::tr("Gracias por jugar!", "Thanks for playing!").c_str());
     
         float offset = 0.0f;
         std::vector<std::tuple<std::string, CCPoint, CCPoint, bool, bool>> corners = {
@@ -37,7 +37,7 @@ using namespace geode::prelude;
         createProfilePlaceholder(layer1, "GersonGaming", 12, 41, 41, 107, 12018835, { 280,40 });
 		
         auto customTitleLayer1 = CCLabelBMFont::create(
-            tr("Organizado por", "Organized by").c_str(),
+            Traslate::tr("Organizado por", "Organized by").c_str(),
             "bigFont.fnt"
         );
 		customTitleLayer1->setScale(0.8f);
@@ -54,7 +54,7 @@ using namespace geode::prelude;
         createProfilePlaceholder(layer2, "GersonGaming", 12, 41, 41, 107, 12018835, { 161,40 });
 
         auto customTitleLayer2 = CCLabelBMFont::create(
-            tr("Creacion de\nniveles", "Level\nCreation").c_str(),
+            Traslate::tr("Creacion de\nniveles", "Level\nCreation").c_str(),
             "bigFont.fnt"
         );
 
@@ -84,7 +84,7 @@ using namespace geode::prelude;
      
         
         auto customTitleLayer4 = CCLabelBMFont::create(
-            tr("Apartado Artistico", "Artistic Section").c_str(),
+            Traslate::tr("Apartado Artistico", "Artistic Section").c_str(),
             "bigFont.fnt"
         );
         customTitleLayer4->setScale(0.65f);
@@ -103,7 +103,7 @@ using namespace geode::prelude;
  
 
         auto customTitleLayer5 = CCLabelBMFont::create(
-            tr("Apartado Musical", "Music Section").c_str(),
+            Traslate::tr("Apartado Musical", "Music Section").c_str(),
             "bigFont.fnt"
         );
         customTitleLayer5->setScale(0.7f);

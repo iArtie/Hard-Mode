@@ -6,28 +6,16 @@ class $modify(LoadingLayer)
 {
     bool init(bool a1) {
 
-        std::string zipFilePath;
+        std::filesystem::path zipFilePath = Mod::get()->getResourcesDir() / "hardmodeTextures.zip";
+        std::filesystem::path unzipDir = Mod::get()->getResourcesDir() / "hardmodeTextures";
 
-
-        std::string unzipDir;
-
-        zipFilePath = geode::Mod::get()->getResourcesDir().string() + "\\" + "hardmodeTextures.zip";
-
-        unzipDir = geode::Mod::get()->getResourcesDir().string() + "\\" + "hardmodeTextures";
-
-#ifdef GEODE_IS_ANDROID
-
-
-        zipFilePath = geode::Mod::get()->getResourcesDir().string() + "/" + "hardmodeTextures.zip";
-
-        unzipDir = geode::Mod::get()->getResourcesDir().string() + "/" + "hardmodeTextures";
-
-#endif
         auto result = geode::utils::file::Unzip::intoDir(zipFilePath, unzipDir);
 
+        auto unzipDirStr = geode::utils::string::pathToString(unzipDir);
+
         CCFileUtils::get()->addTexturePack(CCTexturePack{
-          .m_id = this->getID(),
-          .m_paths = { unzipDir }
+            .m_id = this->getID(),
+            .m_paths = { unzipDirStr }
             });
 
         if (!LoadingLayer::init(a1))

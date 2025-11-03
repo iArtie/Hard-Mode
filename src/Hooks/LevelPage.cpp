@@ -1,5 +1,5 @@
 #include <Geode/modify/LevelPage.hpp>
-#include "../main.cpp"
+#include "../utils/Traslate.hpp"
 
 
 using namespace geode::prelude;
@@ -13,11 +13,11 @@ class $modify(LevelPage)
             auto secret = FLAlertLayer::create(
                 nullptr,
                 "???",
-                tr(
+                Traslate::tr(
                     "<cj>El maravilloso mundo que solias conocer</c>\n<cr>esta desapareciendo..</c>\n<cg>Bienvenido</c> al <cy>HARD MODE</c>",
                     "<cj>The wonderful world you once knew</c>\n<cr>is fading away..</c>\n<cg>Welcome</c> to <cy>HARD MODE</c>"
                 ).c_str(),
-                tr("OK", "OK").c_str(),
+                Traslate::tr("OK", "OK").c_str(),
                 nullptr,
                 360
             );
