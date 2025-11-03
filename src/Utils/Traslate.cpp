@@ -1,4 +1,4 @@
-#include "Traslate.hpp"
+#include <utils/Traslate.hpp>
 
 std::string Traslate::tr(const std::string& es, const std::string& en) {
     auto lang = Mod::get()->getSettingValue<std::string>("language");

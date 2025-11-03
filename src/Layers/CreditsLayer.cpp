@@ -1,6 +1,6 @@
 
-#include "CreditsLayer.h"
-#include "../utils/Traslate.hpp"
+#include <Layers/CreditsLayer.h>
+#include <Utils/Traslate.hpp>
 using namespace geode::prelude;
 
     bool CreditsLayer::setup() {

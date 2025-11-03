@@ -1,5 +1,5 @@
 #include <Geode/modify/OptionsLayer.hpp>
-#include "../utils/Traslate.hpp"
+#include <utils/Traslate.hpp>
 
 using namespace geode::prelude;
 
