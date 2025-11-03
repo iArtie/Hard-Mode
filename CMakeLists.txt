@@ -25,9 +25,9 @@ else()
     message(STATUS "Found Geode: $ENV{GEODE_SDK}")
 endif()
 
-target_include_directories(${PROJECT_NAME} PRIVATE src)
-
 add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
 # Set up dependencies, resources, and link Geode.
 setup_geode_mod(${PROJECT_NAME})
+
+target_include_directories(${PROJECT_NAME} PRIVATE src)
