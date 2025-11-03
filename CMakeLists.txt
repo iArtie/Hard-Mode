@@ -18,7 +18,8 @@ file(GLOB_RECURSE SOURCES
 )
 
 add_library(${PROJECT_NAME} SHARED
-    ${SOURCES})
+    ${SOURCES}
+ "src/Layers/CreditsLayer.h" "src/Hooks/LevelSelectLayer.cpp" "src/Hooks/LoadingLayer.cpp" "src/Hooks/LevelPage.cpp" "src/Hooks/LevelTools.cpp" "src/Hooks/LocalLevelManager.cpp" "src/Hooks/CurrencySprite.cpp" "src/Hooks/MenuLayer.cpp" "src/Hooks/GameManager.cpp" "src/Hooks/CurrencyRewardLayer.cpp" "src/Hooks/PlayLayer.cpp" "src/Hooks/OptionsLayer.cpp" "src/Hooks/ProfilePage.cpp")
 if (NOT DEFINED ENV{GEODE_SDK})
     message(FATAL_ERROR "Unable to find Geode SDK! Please define GEODE_SDK environment variable to point to Geode")
 else()
@@ -27,7 +28,8 @@ endif()
 
 add_subdirectory($ENV{GEODE_SDK} ${CMAKE_CURRENT_BINARY_DIR}/geode)
 
-# Set up dependencies, resources, and link Geode.
-setup_geode_mod(${PROJECT_NAME})
 
 target_include_directories(${PROJECT_NAME} PRIVATE src)
+
+# Set up dependencies, resources, and link Geode.
+setup_geode_mod(${PROJECT_NAME})
