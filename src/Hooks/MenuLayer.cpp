@@ -1,6 +1,6 @@
 #include <Geode/modify/MenuLayer.hpp>
 #include <utils/Traslate.hpp>
-#include "../Layers/CreditsLayer.h"
+#include <Layers/CreditsLayer.h>
 
 
 using namespace geode::prelude;
