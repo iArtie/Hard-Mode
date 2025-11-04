@@ -1,3 +1,7 @@
+# 1.0.3
+-spr fix for corners
+
+
 # 1.0.2
 - Changes and fixes for file paths
 - Fix returns to improve compatibility with different systems
