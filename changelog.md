@@ -1,5 +1,5 @@
 # 1.0.3
--spr fix for corners
+- spr fix for corners
 
 
 # 1.0.2
