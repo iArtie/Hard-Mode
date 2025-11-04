@@ -21,7 +21,7 @@ using namespace geode::prelude;
             corner->setPosition(pos + CCPoint{ -offset * (1 - anchor.x * 2), -offset * (1 - anchor.y * 2) });
             corner->setFlipX(flipX);
             corner->setFlipY(flipY);
-            corner->setID((fmt::format("{}"_spr, name));
+            corner->setID(fmt::format("{}"_spr, name));
             this->m_mainLayer->addChild(corner);
         }
         
