@@ -33,8 +33,16 @@ class $modify(LevelPage)
 
         LevelPage::updateDynamicPage(level);
 
+
+        if (level->m_normalPercent == 100)
+        {
+            this->m_starsLabel->setColor({ 255,49,49 });
+        }
+
         if (level->m_demon == 1)
         {
+
+            
 
             auto oldSprite = this->m_levelDisplay->getChildByTag(1337);
             if (oldSprite) oldSprite->removeFromParent();

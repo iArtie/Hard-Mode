@@ -1,6 +1,12 @@
+# Hard Mode Changelog
+
+# 1.0.4
+- Migration to geode v5.0
+- Fix level names bug with jukebox
+- Added Practice Music Sync as a setting.
+
 # 1.0.3
 - spr fix for corners
-
 
 # 1.0.2
 - Changes and fixes for file paths

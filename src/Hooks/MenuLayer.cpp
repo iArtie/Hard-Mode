@@ -2,7 +2,6 @@
 #include <Utils/Traslate.hpp>
 #include <Layers/CreditsLayer.h>
 
-
 using namespace geode::prelude;
 
 class $modify(MenuLayer) {

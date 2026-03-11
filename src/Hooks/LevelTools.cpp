@@ -15,7 +15,7 @@ class $modify(LevelTools)
 
         switch (levelID) {
         case 1:
-            level->m_levelName = getAudioTitle(0);
+            level->m_levelName = "Stereo Madness";
             level->m_audioTrack = 0;
             level->m_stars = 3;
             level->m_difficulty = GJDifficulty::Normal;
@@ -24,7 +24,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 2:
-            level->m_levelName = getAudioTitle(1);
+            level->m_levelName = "Back on Track";
             level->m_audioTrack = 1;
             level->m_stars = 4;
             level->m_difficulty = GJDifficulty::Normal;
@@ -33,7 +33,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 3:
-            level->m_levelName = getAudioTitle(2);
+            level->m_levelName = "Polargeist";
             level->m_audioTrack = 2;
             level->m_stars = 5;
             level->m_difficulty = GJDifficulty::Hard;
@@ -42,7 +42,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 4:
-            level->m_levelName = getAudioTitle(3);
+            level->m_levelName = "Dry Out";
             level->m_audioTrack = 3;
             level->m_stars = 6;
             level->m_difficulty = GJDifficulty::Hard;
@@ -51,7 +51,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 5:
-            level->m_levelName = getAudioTitle(4);
+            level->m_levelName = "Base After Base";
             level->m_audioTrack = 4;
             level->m_stars = 7;
             level->m_difficulty = GJDifficulty::Harder;
@@ -60,7 +60,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 6:
-            level->m_levelName = getAudioTitle(5);
+            level->m_levelName = "Cant Let Go";
             level->m_audioTrack = 5;
             level->m_stars = 8;
             level->m_difficulty = GJDifficulty::Harder;
@@ -69,7 +69,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 7:
-            level->m_levelName = getAudioTitle(6);
+            level->m_levelName = "Jumper";
             level->m_audioTrack = 6;
             level->m_stars = 9;
             level->m_difficulty = GJDifficulty::Insane;
@@ -78,7 +78,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 8:
-            level->m_levelName = getAudioTitle(7);
+            level->m_levelName = "Time Machine";
             level->m_audioTrack = 7;
             level->m_stars = 10;
             level->m_demon = 1;
@@ -88,7 +88,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 9:
-            level->m_levelName = getAudioTitle(8);
+            level->m_levelName = "Cycles";
             level->m_audioTrack = 8;
             level->m_stars = 11;
             level->m_difficulty = GJDifficulty::Insane;
@@ -97,7 +97,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 10:
-            level->m_levelName = getAudioTitle(9);
+            level->m_levelName = "xStep";
             level->m_audioTrack = 9;
             level->m_stars = 12;
             level->m_demon = 1;
@@ -107,7 +107,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 11:
-            level->m_levelName = getAudioTitle(10);
+            level->m_levelName = "ClutterFunk";
             level->m_audioTrack = 10;
             level->m_stars = 13;
             level->m_demon = 1;
@@ -117,7 +117,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 12:
-            level->m_levelName = getAudioTitle(11);
+            level->m_levelName = "Theory Of Everything";
             level->m_audioTrack = 11;
             level->m_stars = 14;
             level->m_demon = 1;
@@ -127,7 +127,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 13:
-            level->m_levelName = getAudioTitle(12);
+            level->m_levelName = "Electroman Adventures";
             level->m_audioTrack = 12;
             level->m_stars = 13;
             level->m_demon = 1;
@@ -146,7 +146,7 @@ class $modify(LevelTools)
             level->m_levelString = LocalLevelManager::sharedState()->getMainLevelString(levelID);
         }
         level->m_levelID = levelID;
-        level->m_levelType = GJLevelType::Local;
+        level->m_levelType = GJLevelType::Main;
 
         return level;
 

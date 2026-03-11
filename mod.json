@@ -1,10 +1,10 @@
 {
-	"geode": "4.9.0",
+	"geode": "5.3.0",
 	"gd": {
-		"win": "2.2074",
-		"android": "2.2074",
-		"ios": "2.2074",
-		"mac": "2.2074"
+		"win": "2.2081",
+		"android": "2.2081",
+		"ios": "2.2081",
+		"mac": "2.2081"
 	},
 	"id": "bitz.hard_mode",
 	"name": "Hard Mode",
@@ -22,6 +22,7 @@
 		]
 	},
 	"links": {
+		"homepage": "https://bitzgd.github.io",
 		"source": "https://github.com/iArtie/Hard-Mode",
 		"community": "https://discord.gg/gXg8w4xJDA"
 	},
@@ -29,27 +30,23 @@
 		"content",
 		"gameplay"
 	],
-	"incompatibilities": [
+	"incompatibilities": 
 		{
-			"id": "capeling.geometry-dash-lunar",
-			"version": "<=1.0.0",
-			"importance": "conflicting"
-		},
-		{
-			"id": "teamtcm.geometry-dash-odyssey",
-			"version": "<=1.0.0",
-			"importance": "conflicting"
-		},
-		{
-			"id": "chumiu.geometry_dash_time_reborn",
-			"version": "<=1.0.0",
-			"importance": "conflicting"
+            "capeling.geometry-dash-lunar": "<=1.0.0",
+			"teamtcm.geometry-dash-lunar": "<=1.0.0",
+            "chumiu.geometry_dash_lunar": "<=1.0.0"
 		}
-	],
+	,
 	"settings": {
 		"unlock-all": {
 			"name": "Unlock all",
 			"description": "Unlock all achievements to use!",
+			"type": "bool",
+			"default": true
+		},
+		"practice-music": {
+			"name": "Practice Music",
+			"description": "Unlock Practice Music Sync to use",
 			"type": "bool",
 			"default": true
 		},

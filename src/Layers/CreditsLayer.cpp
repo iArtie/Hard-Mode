@@ -3,8 +3,12 @@
 #include <Utils/Traslate.hpp>
 using namespace geode::prelude;
 
-    bool CreditsLayer::setup() {
+    bool CreditsLayer::init() {
   
+		if (!Popup::init(434, 260, "GJ_square01.png")) {
+            return false;
+        }
+
         this->setTitle(Traslate::tr("Gracias por jugar!", "Thanks for playing!").c_str());
     
         float offset = 0.0f;
@@ -219,16 +223,17 @@ using namespace geode::prelude;
         layer->addChild(icon);
     }
 
-    void CreditsLayer::toProfile(CCObject* sender)
-    {
-		ProfilePage::create(sender->getTag(), false)->show();
-    }
+    void CreditsLayer::toProfile(CCObject* sender) {
+    if (!sender) return;
+
+    ProfilePage::create(sender->getTag(), false)->show();
+}
      CreditsLayer* CreditsLayer::create() {
         auto ret = new CreditsLayer();
 
 		ret->m_noElasticity = true;
 		auto director = CCDirector::sharedDirector();
-        if (ret->initAnchored(434, 260, "GJ_square01.png")) {
+        if (ret->init()) {
             ret->autorelease();
             return ret;
         }
