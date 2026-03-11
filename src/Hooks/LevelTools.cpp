@@ -107,7 +107,7 @@ class $modify(LevelTools)
             level->m_coins = 3;
             break;
         case 11:
-            level->m_levelName = "ClutterFunk";
+            level->m_levelName = "Clutterfunk";
             level->m_audioTrack = 10;
             level->m_stars = 13;
             level->m_demon = 1;
